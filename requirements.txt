@@ -8,3 +8,4 @@ langchain-google-genai
 langchain-mistralai
 
 python-dotenv
+langchain_huggingface
