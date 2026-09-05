@@ -25,3 +25,5 @@ while True:
     response = model.invoke(history)
     history.append(AIMessage(content = response.content))
     print("Bot: ",response.content) 
+
+#no tokens left, refer to newChatBot.py 
