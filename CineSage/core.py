@@ -1,9 +1,14 @@
+#prompt template
+
 from dotenv import load_dotenv
 
 load_dotenv() 
 
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import ChatPromptTemplate # to use prompt template
+
+
+
 
 llm = HuggingFaceEndpoint (
     repo_id = "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -12,6 +17,7 @@ llm = HuggingFaceEndpoint (
 )
 
 model = ChatHuggingFace(llm = llm)
+
 
 prompt = ChatPromptTemplate.from_messages([
     (
